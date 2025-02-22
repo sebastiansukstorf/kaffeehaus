@@ -1,0 +1,49 @@
+---
+title: "Use Case: Von der Zeitschriftenlektüre zu den wissenschaftlichen Fachgebieten"
+subtitle: "Use Case 'Kaffeehaus' führt eine Textanalyse mit Python auf Zeitschriftenartikeln durch und leitet aus den analysierten Topics die wissenschaftliche Fachgebiete ab, um mit einer weiteren Recherche die relevante Einführungsliteratur zu identifizieren."
+title-block-banner: true
+execute:
+    echo: true
+    eval: true
+    enabled: true
+engine: jupiter
+jupyter: python3
+lang: de
+date: today
+date-format: dddd, D MMM YYYY
+bibliography: "/Users/sebastiansukstorf/Library/CloudStorage/OneDrive-Persönlich/bib/sukstorf_bib.bib"
+author:
+    - name: Sebastian Sukstorf
+      orcid: 0000-0002-1538-5658
+      affiliations:
+    - name: Sebastian Sukstorf
+abstract: "Use Case 'Kaffeehaus' führt eine Textanalyse mit Python in auf Zeitschriftenartikeln durch und leitet aus den analysierten Topics die wissenschaftliche Fachgebiete ab, um mit einer weiteren Recherche die relevante Einführungsliteratur zu identifizieren."
+format: 
+    html:
+        theme: default
+        toc: true
+        html-math-method: webtex
+fig_caption: yes
+---
+
+## Laden der benötigten Pakete
+
+```{python}
+#| label: Laden der benötigten Pakete
+#| message: false
+
+```
+
+## Definition der Ladefunktion für die pdf-Dateien
+
+Die gespeicherten Lektüredateien werden über den Drucker-Dialog auf dem Endgeräte als pdf Dokument im OneDrive Ordner 'pdf0' gespeichert. 
+
+'O' definiert hier den Ordner, der noch unverarbeiteten pdf-Dokumente. 
+
+Nach der erfolgreichen Verarbeitung werden die pdf-Dokumente im OneDrive Ordner 'pdf1' gespeichert und in der SharePoint Liste 'kaufhaus als neuer Eintrag in der Liste gespeichert.' 
+
+```{python}
+#| label: Definition der Ladefunktion
+#| message: false
+#| 
+```
